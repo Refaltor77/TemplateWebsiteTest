@@ -1,0 +1,99 @@
+@import 'scss/reset';
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Arial Rounded MT Bold", serif;
+}
+
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 80px;
+  padding: 0 8%;
+  color: #ffffff;
+  background: black;
+
+  nav {
+    display: block;
+    transition: 0.3s ease-in-out;
+    li {
+      display: inline;
+      padding: 10px;
+    }
+
+    a {
+      transition: 0.3s ease-in-out;
+    }
+    a:hover {
+      color: #ffc400;
+    }
+  }
+
+  .logo {
+    font-size: 20px;
+  }
+
+  .play-now {
+    border: solid 2px #ffc400;
+    padding: 8px;
+    transition: 0.3s ease-in-out;
+
+    &:hover {
+      border-radius: 50px;
+      cursor: pointer;
+      background-color: #ffc400;
+      letter-spacing: 5px;
+    }
+  }
+}
+
+main {
+  background: black;
+  height: calc(100vh - 80px);
+  padding: 0 8%;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  background-size: cover;
+  color: white;
+
+  .left {
+    padding: 20px;
+    border-radius: 20px;
+    h1 {
+      color: #ffc400;
+      font-size: 33px;
+    }
+    p {
+      color: #ffffff;
+    }
+
+    input {
+      margin-top: 50px;
+      font-size: 50px;
+      color: #ffc400;
+      border: solid 2px yellow;
+      padding: 7px;
+      border-radius: 7px;
+      transition: 0.3s ease-in-out;
+      &:hover {
+        letter-spacing: 7px;
+        border-radius: 30px;
+        font-size: 55px;
+        background: #ffc400;
+        color: #141414;
+      }
+    }
+  }
+
+  .right {
+    img {
+      height: 100%;
+    }
+  }
+}
