@@ -19,4 +19,4 @@ npm start
 
 ## Image
 
-<img src="img/pic.png">
+<img src="pic.png">
